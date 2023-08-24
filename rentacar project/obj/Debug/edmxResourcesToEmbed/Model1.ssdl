@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="rentacarModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="branch">
+    <Key>
+      <PropertyRef Name="SubeID" />
+    </Key>
+    <Property Name="SubeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="subeAdi" Type="varchar" MaxLength="50" />
+    <Property Name="subeLokasyon" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="cars">
+    <Key>
+      <PropertyRef Name="carID" />
+    </Key>
+    <Property Name="carID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="price" Type="money" />
+    <Property Name="quantity" Type="int" />
+    <Property Name="carBrand" Type="varchar" MaxLength="50" />
+    <Property Name="carModel" Type="varchar" MaxLength="50" />
+    <Property Name="carModelYear" Type="varchar" MaxLength="50" />
+    <Property Name="carPacket" Type="varchar" MaxLength="50" />
+    <Property Name="Colour" Type="varchar" MaxLength="50" />
+    <Property Name="gear" Type="int" />
+  </EntityType>
+  <EntityType Name="customers">
+    <Key>
+      <PropertyRef Name="customerNo" />
+    </Key>
+    <Property Name="customerNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="customerNameSurname" Type="varchar" MaxLength="50" />
+    <Property Name="customerPhone" Type="char" MaxLength="11" />
+    <Property Name="customerAge" Type="int" />
+    <Property Name="customerBalance" Type="money" />
+    <Property Name="customerPayment" Type="money" />
+    <Property Name="customerPW" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="employee">
+    <Key>
+      <PropertyRef Name="employeeID" />
+    </Key>
+    <Property Name="employeeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="employeeNameSurname" Type="varchar" MaxLength="50" />
+    <Property Name="employeePhone" Type="char" MaxLength="11" />
+    <Property Name="employeeTitle" Type="varchar" MaxLength="50" />
+    <Property Name="employeeMail" Type="varchar" MaxLength="50" />
+    <Property Name="empoloyeeWage" Type="money" />
+    <Property Name="empoloyeePw" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityContainer Name="rentacarModelStoreContainer">
+    <EntitySet Name="branch" EntityType="Self.branch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="cars" EntityType="Self.cars" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="customers" EntityType="Self.customers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="employee" EntityType="Self.employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

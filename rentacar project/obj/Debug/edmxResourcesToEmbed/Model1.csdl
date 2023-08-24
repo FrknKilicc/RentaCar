@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="rentacarModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="car">
+    <Key>
+      <PropertyRef Name="carID" />
+    </Key>
+    <Property Name="carID" Type="Int32" Nullable="false" />
+    <Property Name="price" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="quantity" Type="Int32" />
+    <Property Name="carBrand" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="carModel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="carModelYear" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="carPacket" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Colour" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="gear" Type="Int32" />
+  </EntityType>
+  <EntityType Name="customer">
+    <Key>
+      <PropertyRef Name="customerNo" />
+    </Key>
+    <Property Name="customerNo" Type="Int32" Nullable="false" />
+    <Property Name="customerNameSurname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="customerPhone" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+    <Property Name="customerAge" Type="Int32" />
+    <Property Name="customerBalance" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="customerPayment" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="customerPW" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityContainer Name="rentacarEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="cars" EntityType="Self.car" />
+    <EntitySet Name="customers" EntityType="Self.customer" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="employees" EntityType="rentacarModel.employee" />
+    <EntitySet Name="branches" EntityType="rentacarModel.branch" />
+  </EntityContainer>
+  <EntityType Name="employee">
+    <Key>
+      <PropertyRef Name="employeeID" />
+    </Key>
+    <Property Name="employeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="employeeNameSurname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="employeePhone" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+    <Property Name="employeeTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="employeeMail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="empoloyeeWage" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="empoloyeePw" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="branch">
+    <Key>
+      <PropertyRef Name="SubeID" />
+    </Key>
+    <Property Name="SubeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="subeAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="subeLokasyon" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

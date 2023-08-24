@@ -1,0 +1,19 @@
+C:\Users\BRIGHT\Desktop\console örnekleri\rentacar project\rentacar project\bin\Debug\rentacar project.exe.config
+C:\Users\BRIGHT\Desktop\console örnekleri\rentacar project\rentacar project\bin\Debug\rentacar project.exe
+C:\Users\BRIGHT\Desktop\console örnekleri\rentacar project\rentacar project\bin\Debug\rentacar project.pdb
+C:\Users\BRIGHT\Desktop\console örnekleri\rentacar project\rentacar project\bin\Debug\EntityFramework.dll
+C:\Users\BRIGHT\Desktop\console örnekleri\rentacar project\rentacar project\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\BRIGHT\Desktop\console örnekleri\rentacar project\rentacar project\bin\Debug\EntityFramework.xml
+C:\Users\BRIGHT\Desktop\console örnekleri\rentacar project\rentacar project\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\BRIGHT\Desktop\console örnekleri\rentacar project\rentacar project\obj\Debug\rentacar project.csproj.AssemblyReference.cache
+C:\Users\BRIGHT\Desktop\console örnekleri\rentacar project\rentacar project\obj\Debug\rentacar project.csproj.SuggestedBindingRedirects.cache
+C:\Users\BRIGHT\Desktop\console örnekleri\rentacar project\rentacar project\obj\Debug\rentacar_project.yoneticiKadi.resources
+C:\Users\BRIGHT\Desktop\console örnekleri\rentacar project\rentacar project\obj\Debug\rentacar_project.Properties.Resources.resources
+C:\Users\BRIGHT\Desktop\console örnekleri\rentacar project\rentacar project\obj\Debug\rentacar project.csproj.GenerateResource.cache
+C:\Users\BRIGHT\Desktop\console örnekleri\rentacar project\rentacar project\obj\Debug\rentacar project.csproj.CoreCompileInputs.cache
+C:\Users\BRIGHT\Desktop\console örnekleri\rentacar project\rentacar project\obj\Debug\rentacar project.csproj.CopyComplete
+C:\Users\BRIGHT\Desktop\console örnekleri\rentacar project\rentacar project\obj\Debug\rentacar project.exe
+C:\Users\BRIGHT\Desktop\console örnekleri\rentacar project\rentacar project\obj\Debug\rentacar project.pdb
+C:\Users\BRIGHT\Desktop\console örnekleri\rentacar project\rentacar project\obj\Debug\rentacar_project.kayit.resources
+C:\Users\BRIGHT\Desktop\console örnekleri\rentacar project\rentacar project\obj\Debug\rentacar_project.musteriPage.resources
+C:\Users\BRIGHT\Desktop\console örnekleri\rentacar project\rentacar project\obj\Debug\rentacar_project.Calisan.resources
